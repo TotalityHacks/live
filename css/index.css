@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700|Open+Sans:300,400');
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #e60c88;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    background: linear-gradient(#F05A2A,#E60C88);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+body > div {
+    display: none;
+}
+
+#no_js {
+    position: relative;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+#form_container {
+    display: none;
+}
+
+#login_registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 95vh;
+}
+
+#login_registration form {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+}
+
+#lr_logo {
+    width: 90%;
+    margin-top: 20vh;
+    max-width: 500px;
+    margin-bottom: 5vh;
+    height: 10vh;
+}
+
+#login_selector {
+    font-size: 18pt;
+    margin: 10px;
+}
+
+a.selector {
+    padding: 10px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+}
+
+a.selector.selected {
+    font-weight: bold;
+}
+
+.form_error {
+    display: block;
+    margin-left: 10px;
+}
+
+#login_form {
+    position: absolute;
+    top: 0;
+    bottom: 80px;
+    left: 0;
+    right: 20px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+input.lr {
+    display: block;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    color: white;
+    font-size: 16pt;
+    padding: 10px;
+    width: 100%;
+}
+
+input.lr:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+input.lr::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16pt;
+    color: white;
+}
+
+input[type="submit"].lr {
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #d53d6c;
+    cursor: pointer;
+}
+
+input[disabled].lr {
+    opacity: 0.5;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.btn {
+    font-family: 'Ubuntu', 'Open Sans', Arial, sans-serif;
+    font-weight: 500;
+    color: white!important;
+    padding: 10px;
+    height: 45px;
+    background-color: #E60C88;
+    font-size: 16pt;
+    width: 260px;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn:active {
+    background-color: #91486d;
+}
+
+.btn:focus {
+    outline:none;
+}
+
+#submit {
+    width: 100%;
+    margin: 40px auto;
+    margin-bottom: 0;
+    display: block;
+}
+
+#skip {
+    width: 100%;
+    margin: 40px auto;
+    margin-top: 10px;
+    display: block;
+}
+
+#forgot {
+    text-align: center;
+    width: 100%;
+    font-size: 12pt;
+    padding-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#application {
+    margin: 0 auto;
+    width: 90vw;
+    min-height: 95vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    width: 80vw;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 38pt;
+    font-weight: lighter;
+    font-family: 'Ubuntu', sans-serif;
+    font-variant: small-caps;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#sun {
+    max-height: 1.5em;
+    margin: 0 0px -10px 20px;
+}
+
+#page_title {
+    margin: 8px 20px;
+}
+
+#last_saved {
+    margin: 0 0 0 auto;
+    font-weight: 300;
+    font-size: 12pt;
+    font-variant: normal;
+    align-self: flex-end;
+}
+
+#logout {
+    margin: 0 20px 0 10px;
+    display: inline;
+    font-size: 12pt;
+    align-self: flex-end;
+    font-variant: normal;
+    color: white;
+}
+
+#application_form {
+    background-color: white;
+    width: 80vw;
+    max-width: 1000px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#application_form > div {
+    margin-top: 10px;
+}
+
+#personal_info {
+    padding-right: 20px;
+}
+
+ion-icon {
+    color: black;
+    font-size: 20pt;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#personal_info > span {
+    display: block;
+    font-family: 'Ubuntu';
+    font-size: 16pt;
+    color: #666;
+}
+
+#personal_info > .social {
+    font-family: 'Menlo';
+    font-size: 12pt;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: black;
+}
+
+#personal_info a {
+    text-decoration: none;
+    color: #444;
+}
+
+#personal_info > span#name, span#school{
+    color: #e60c88;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#essays > textarea {
+    resize: none;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 15px 10px 15px;
+    font-size: 12pt;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    height: 260px;
+    border: 1px solid #ccc;
+}
+
+#essays > span {
+    background-color: #aaa;
+    color: white;
+    text-transform: uppercase;
+    font-size: 8pt;
+    padding: 4px 6px 6px 6px;
+    line-height: 180%;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#assessment {
+    margin-top: 30px;
+    font-size: 14pt;
+    color: #e60c88
+}
+
+#assessment > input[type="text"] {
+    margin-bottom: 12px;
+    font-size: 20pt;
+    width: 50px;
+    text-align: center;
+    padding: 5px 7px;
+    margin-right: 10px;
+    color: #e60c88;
+    border: 1px solid #ddd;
+}
+
+#assessment > input[type="text"]:focus {
+    border: 1px solid #e60c88;
+}
+
+#resumeViewer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    display: none;
+}
+
+#web {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    display: none;
+}
+
+.page {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    width: 40%;
+    min-width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper.essay {
+    width: 100%;
+}
+
+input.app, textarea.app {
+    width: 95%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14pt;
+    padding: 5px 10px;
+}
+
+textarea.app {
+    min-height: 200px;
+}
+
+label.app {
+    color: #E60C88;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14pt;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#buttons input {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #E60C88;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #E60C88;
+    cursor: pointer;
+}
+
+.app label::after {
+    transition: 1s;
+    content: "(Required)";
+    color: red;
+    font-size: 12pt;
+    margin-left: 10px;
+    opacity: 0;
+}
+
+.app.required label::after {
+    opacity: 1;
+}
