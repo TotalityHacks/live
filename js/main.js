@@ -33,4 +33,4 @@ function pushNotification(title, body) {
 
 }
 
-pushNotification('Dinner Served!', 'Come to the Expo Floor to get some snacks!')
+// pushNotification('Dinner Served!', 'Come to the Expo Floor to get some snacks!')
