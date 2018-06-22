@@ -194,6 +194,20 @@ input[type="text"]:focus {
   border-bottom: 1px solid #ccc;
 }
 
+.schedule {
+  padding-top: 25px;
+}
+
+.panel .time {
+  background-color: rgb(240, 240, 240);
+  border-radius: 2px;
+  font-family: 'Ubuntu';
+  color: black;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
 .btn {
     font-family: 'Ubuntu', 'Open Sans', Arial, sans-serif;
     font-weight: 500;
