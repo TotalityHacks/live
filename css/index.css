@@ -208,6 +208,24 @@ input[type="text"]:focus {
   margin-bottom: 10px;
 }
 
+.schedule .event {
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.schedule .event > .name {
+  color: black;
+  font-weight: bold;
+  font-size: 13pt;
+}
+
+.schedule .event > .details {
+  color: #999;
+  font-weight: normal;
+  font-size: 11pt;
+}
+
 .btn {
     font-family: 'Ubuntu', 'Open Sans', Arial, sans-serif;
     font-weight: 500;
